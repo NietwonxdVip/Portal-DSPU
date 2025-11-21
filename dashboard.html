@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDSonline - Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo-upds-blanco.png" alt="UPDS Logo" class="logo-image">
+                <div class="header-text">
+                    <div class="university-name">UNIVERSIDAD PRIVADA DOMINGO SAVIO</div>
+                </div>
+            </div>
+            <div class="system-name-header">
+                <span class="system-name-bold">UPDSonline</span> Sistema de Consulta Académica
+            </div>
+            <div class="user-section">
+                <div class="user-info">
+                    <div class="user-name">Erwin</div>
+                    <div class="user-email">tj.erwin.colque.g@upds.net.bo</div>
+                </div>
+                <div class="user-avatar">E</div>
+                <a href="login.html" class="logout-link">
+                    Salir
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="dashboard.html" class="nav-link active">Inicio</a>
+        <a href="historico.html" class="nav-link">Histórico Registro</a>
+        <a href="seguimiento.html" class="nav-link">Seguimiento & Registro</a>
+        <a href="#" class="nav-link">Comunicación ▾</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-header">
+            <div>
+                <h1 class="page-title">Inicio</h1>
+                <p class="page-subtitle">cuadro de eventos e información</p>
+            </div>
+            <div class="view-controls">
+                <div class="breadcrumb">
+                    <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+                    </svg>
+                    <span>Inicio</span>
+                </div>
+                <div class="view-buttons">
+                    <button class="view-btn">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                    <button class="view-btn active">
+                        <svg class="icon-small" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Grid -->
+        <div class="cards-grid">
+            <div class="card card-green">
+                <div class="card-icon">✏️</div>
+                <h3 class="card-title">EDITAR DATOS PARA SU FACTURA</h3>
+                <p class="card-description">Desde el siguiente link puede editar...</p>
+            </div>
+
+            <div class="card card-pink">
+                <div class="card-icon">🤝</div>
+                <h3 class="card-title card-title-black">CUENTA DE MICROSOFT OFFICE365</h3>
+                <p class="card-description">Empieza a disfrutar ahora de tu...</p>
+            </div>
+
+            <div class="card card-pink">
+                <div class="card-icon">🤝</div>
+                <h3 class="card-title card-title-blue">E-LIBRO AHORA A TU ALCANCE</h3>
+                <p class="card-description">Todo lo que buscabas para ampliar...</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        UPDS.NET v.5.1 © 2025 - Desarrollado por la Universidad Privada Domingo Savio.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

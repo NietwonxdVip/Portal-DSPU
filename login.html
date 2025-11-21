@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDSonline - Sistema de Consulta Académica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="logo-upds-blanco.png" alt="UPDS Logo" class="logo-image">
+                <div class="header-text">
+                    <div class="university-name">UNIVERSIDAD PRIVADA DOMINGO SAVIO</div>
+                </div>
+            </div>
+            <div class="system-name-header">
+                <span class="system-name-bold">UPDSonline</span> Sistema de Consulta Académica
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Section - Login Form -->
+        <div class="login-section">
+            <h1 class="login-title">Iniciar Sesión</h1>
+            
+            <!-- Microsoft AD Login -->
+            <div class="form-group">
+                <label class="form-label">Microsoft AD:</label>
+                <button class="btn-microsoft" onclick="handleMicrosoftLogin()">
+                    <svg class="icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10 2L3 7v11h4v-6h6v6h4V7l-7-5z"/>
+                    </svg>
+                    Microsoft Office 365
+                </button>
+            </div>
+
+            <button class="link-button" onclick="alert('Función de consulta de cuenta')">
+                click aquí para consultar mi cuenta
+            </button>
+
+            <div class="divider">
+                <div class="divider-line"></div>
+                <span class="divider-text">ó</span>
+                <div class="divider-line"></div>
+            </div>
+
+            <!-- Login Form -->
+            <form class="login-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label class="form-label">Usuario:</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                        <input type="text" placeholder="C.I ó Cuenta Office365" class="form-input" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Contraseña:</label>
+                    <div class="input-wrapper">
+                        <svg class="input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                        <input type="password" placeholder="Pin" class="form-input" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-login">
+                    Iniciar Sesion
+                    <svg class="icon-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- Right Section - Mission, Vision, Values -->
+        <div class="info-section">
+            <div class="info-content">
+                <div class="info-block">
+                    <h2 class="info-title">Misión</h2>
+                    <p class="info-text">
+                        Generar cambios en las personas para desarrollar emprendedores socialmente responsables 
+                        capaces de responder a desafíos emergentes.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h2 class="info-title">Visión</h2>
+                    <p class="info-text">
+                        Ser la red de educación universitaria referente a nivel nacional por su formación 
+                        académica de excelencia basada en la investigación científica y su compromiso con 
+                        la Internacionalización.
+                    </p>
+                </div>
+
+                <div class="info-block">
+                    <h2 class="info-title">Valores</h2>
+                    <p class="info-text">
+                        Respeto, resiliencia, trabajo en colaborativo, compromiso e integridad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        UPDS.NET v.5.1 © 2025 - Desarrollado por la Universidad Privada Domingo Savio.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
